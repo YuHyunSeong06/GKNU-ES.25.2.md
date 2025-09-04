@@ -54,9 +54,9 @@ void setup(){
 
 void loop(){
   digitalWrite(13,HIGH);
-  delay(500);
+  delay(500); // 500 1번 깜빡
   degitalWrite(13,LOW);
-  delay(500);
+  delay(500); // 250 2번 깜빡
 }
 ```
 ```c
@@ -72,3 +72,5 @@ void loop(){
   if(a=='1') digitalWrite(13,HIGH);
   if(a=='0') degitalWrite(13,LOW);
 }
+```
+##### Serial Monitor를 통해 아두이노를 조종할 수 있다.
