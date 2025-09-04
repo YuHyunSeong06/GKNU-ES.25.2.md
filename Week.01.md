@@ -46,14 +46,33 @@ void key(){
 #####         - pin: 설정하려는 핀의 번호
 #####         - mode : OUTPUT(출력), INPUT(입력), INPUT_PULLUP(내부의 풀업저항 사용) 중 원하는 모드 설정
 ##### digitalWrite(핀번호, 값) : 주어진 핀번호에 대해 값을 기록
-##### 
+#### 2번 LED 깜빡이는 코드
 ```c
 void setup(){
   pinMode(13,OUTPUT); // pinMode
 }
 
 void loop(){
-  digitalWrite(13,업
+  digitalWrite(13,HIGH);
+  delay(250);
+  digitalWrite(13,LOW);
+  delayy(250);
+}
+```
+#### 1번 LED 깜빡이는 코드
+```c
+void setup(){
+  pinMode(13,OUTPUT); // pinMode
+}
+
+void loop(){
+  digitalWrite(13,HIGH);
+  delay(250);
+  digitalWrite(13,LOW);
+  delayy(250);
+}
+```
+#### 뒤를 부탁한다 수경티비비
 ```c
 void setup(){
   pinMode(13,OUTPUT);
