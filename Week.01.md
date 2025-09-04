@@ -1,6 +1,7 @@
 ## 임베디드 시스템
 ##### Arduino IDE 와 Processing 다운로드
 ###### 25.09.02 첫번째 수업
+##### Arduino IDE로 코딩
 ```c
 void setup(){
   pinMode(13, OUTPUT);
@@ -15,6 +16,7 @@ void loop(){
   }
 }
 ```
+##### processing로 코딩
 ```c
 import processing.serial.*;
 Serial p;
@@ -33,4 +35,22 @@ void key(){
 ```
 
 ###### 25.09.04 첫번째 수업
+## 아두이노의 구성 및 코드
+##### void 리턴값 x
+##### setup() : 한 번만 돌아가는 함수
+##### loop() : 반복되는 함수
+##### 13번 붉은선 : 길이가 길다
+##### gnd 검은선 : 길이가 짧다
+##### 아두이노 그라운드는 3개
+```c
+void setup(){
+  pinMode(13,OUTPUT); // pinMode
+}
+
+void loop(){
+  digitalWrite(13,HIGH);
+  delay(500);
+  degitalWrite(13,LOW);
+  delay(500);
+}
 ```
