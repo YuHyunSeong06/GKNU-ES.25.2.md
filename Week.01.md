@@ -53,13 +53,7 @@ void setup(){
 }
 
 void loop(){
-  digitalWrite(13,HIGH);
-  delay(500); // 500 1번 깜빡
-  degitalWrite(13,LOW);
-  delay(500); // 250 2번 깜빡
-}
-```
-```c
+  digitalWrite(13,업
 ```c
 void setup(){
   pinMode(13,OUTPUT);
