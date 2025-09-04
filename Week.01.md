@@ -1,6 +1,6 @@
 ## 임베디드 시스템
 ##### Arduino IDE 와 Processing 다운로드
-####### 25.09.02 첫번째 수업
+###### 25.09.02 첫번째 수업
 ```c
 void setup(){
   pinMode(13, OUTPUT);
