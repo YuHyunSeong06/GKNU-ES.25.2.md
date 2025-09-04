@@ -42,6 +42,11 @@ void key(){
 ##### 13번 붉은선 : 길이가 길다
 ##### gnd 검은선 : 길이가 짧다
 ##### 아두이노 그라운드는 3개
+##### pinMode(pin, mode) : 특정한 핀을 입력으로 쓸지 출력으로 쓸지 설정하는 함수
+#####         - pin: 설정하려는 핀의 번호
+#####         - mode : OUTPUT(출력), INPUT(입력), INPUT_PULLUP(내부의 풀업저항 사용) 중 원하는 모드 설정
+##### digitalWrite(핀번호, 값) : 주어진 핀번호에 대해 값을 기록
+##### 
 ```c
 void setup(){
   pinMode(13,OUTPUT); // pinMode
