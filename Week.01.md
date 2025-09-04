@@ -59,3 +59,16 @@ void loop(){
   delay(500);
 }
 ```
+```c
+```c
+void setup(){
+  pinMode(13,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop(){
+  int a = Serial.read();
+
+  if(a=='1') digitalWrite(13,HIGH);
+  if(a=='0') degitalWrite(13,LOW);
+}
