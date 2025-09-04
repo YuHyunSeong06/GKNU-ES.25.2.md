@@ -87,3 +87,18 @@ void loop(){
 }
 ```
 ##### Serial Monitor를 통해 아두이노를 조종할 수 있다.
+####
+```c
+import processing.serial.*;
+Serial p;
+
+void setup(){
+	p=new Serial(this, "COM3",9600);
+}
+
+void draw(){
+}
+void keyPressed(){
+	p.write(key);
+}
+```
