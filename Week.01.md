@@ -17,7 +17,7 @@ void loop(){
 }
 ```
 ##### processing로 코딩
-```c
+```java
 import processing.serial.*;
 Serial p;
 void setup()
@@ -88,7 +88,7 @@ void loop(){
 ```
 ##### Serial Monitor를 통해 아두이노를 조종할 수 있다.
 ####
-```c
+```java
 import processing.serial.*;
 Serial p;
 
