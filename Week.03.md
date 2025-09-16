@@ -15,3 +15,6 @@ void loop(){
   }
 }
 ```
+## URL 의 구성
+##### cmd를 통해 ipconfig 를 통해 ip 확보
+##### http://(ip 주소):(포트번호)
