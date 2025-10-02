@@ -21,6 +21,8 @@
 ##### 은 마찬가지
 ##### ex) 330ohm 주주갈
 ##### ex) 10kohm 갈검주
+### 중간고사 실기(안)
+##### Arduino IDE 코드
 ```c
 void setup() {
   Serial.begin(9600);
@@ -63,6 +65,7 @@ void loop() {
   }
 }
 ```
+##### Processing 코드
 ```java
 import processing.serial.*;
 import processing.net.*;
