@@ -75,22 +75,27 @@ void setup() {
 }
 String msg;
 void draw() {
-  if(p.available()>0){
-    msg=p.readStringUntil('\n');
-    if(msg!=null){
-      msg=msg.trim();
+  if(p.available() > 0) {
+    msg = p.readStringUntil('\n');
+    if (msg != null) {
+      msg = msg.trim();
       println(msg);
     }
   }
-  c=s.available();
-  if(c!=null){
-    String g=c.readString();
-    g=g.substring(g.length()-1);
-    print(g);
-    p.write(g);
-    c.write("http://1.1 200 0K\r\n\r\n");
-    c.write(msg);
+  c = s.available();
+  if (c != null) {
+    String g = c.readString();
+    if (g != null && g.length() > 0) {
+      g = g.substring(g.length() - 1);
+      print(g);
+      p.write(g);
+      c.write("http://1.1 200 0K\r\n\r\n");
+      if (msg != null) {
+        c.write(msg);
+      }
+    }
     c.stop();
   }
 }
+
 ```
